@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculadora de Hidratación Basal</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="./script.js" defer></script>
 </head>
 
 <body>
@@ -14,12 +15,11 @@
       <h1 class="title">Calculadora Basal</h1>
       <h3 class="subtitle">Ingresa el peso en Kg</h3>
       <div class="container_input">
-        <input type="number" placeholder="Peso en kg">
-        <span class="error">Debe completar todos los datos</span>
+        <input class="weight" type="number" placeholder="Peso en kg">
+        <span class="error"></span>
       </div>
       <button class="calculator_btn">Calcular</button>
-      <p class="result">50cc/h</p>
-      <p class="result">m+m/2 : 115cc/h</p>
+      <div id="container_results"></div>
     </form>
 
     <div id="calculator_content" class="container_div">
