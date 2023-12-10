@@ -9,6 +9,7 @@ inputWeight.addEventListener("input", event => {
   inputValue = inputValue.replace(/\D/g, '').slice(0, 3);
 
   inputWeight.value = inputValue;
+  error.textContent = "";
 });
 
 calculatorForm.addEventListener("submit", event => {
@@ -53,7 +54,7 @@ const calculateBodySurface = weight => {
 };
 
 const firstMethod = weight => {
-  let volume = 0;
+  let volume;
 
   if (weight <= 10) {
     volume = weight * 100;
